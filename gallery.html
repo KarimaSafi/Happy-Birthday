@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1100">
+    <title>Gallery — Zahra's Birthday</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="balloon-field" id="balloonField" aria-hidden="true"></div>
+    <div class="confetti-field" id="confettiField" aria-hidden="true"></div>
+
+    <nav class="site-nav">
+        <a href="index.html" class="brand">🎈 Zahra's Day</a>
+        <div class="nav-links">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="gallery.html" class="nav-link active">Gallery</a>
+        </div>
+    </nav>
+
+    <header class="gallery-header">
+        <div class="header gallery-header-box">
+            <p class="eyebrow">12 favorite moments</p>
+            <h1>📸 The Memory Wall</h1>
+            <h4 id="date">Tap any photo to make it bigger. Tap the heart to send love.</h4>
+        </div>
+    </header>
+
+    <main>
+        <div class="gallery-grid" id="galleryGrid">
+            <!-- Each figure ships with a real <img> that points at images/gallery-N.jpg.
+                 Drop your own photos into the images folder using that naming pattern
+                 and they'll appear automatically. Until then, script.js shows a
+                 friendly placeholder card. -->
+            <figure class="gallery-card reveal" data-index="1">
+                <button type="button" class="heart-button" aria-label="Send love to this memory">🤍</button>
+                <img src="images/gallery-1.png" alt="Memory 1 with Zahra" loading="lazy">
+                <figcaption>Memory 01</figcaption>
+            </figure>
+            <figure class="gallery-card reveal" data-index="2">
+                <button type="button" class="heart-button" aria-label="Send love to this memory">🤍</button>
+                <img src="images/gallery-2.png" alt="Memory 2 with Zahra" loading="lazy">
+                <figcaption>Memory 02</figcaption>
+            </figure>
+            <figure class="gallery-card reveal" data-index="3">
+                <button type="button" class="heart-button" aria-label="Send love to this memory">🤍</button>
+                <img src="images/gallery-3.png" alt="Memory 3 with Zahra" loading="lazy">
+                <figcaption>Memory 03</figcaption>
+            </figure>
+            <figure class="gallery-card reveal" data-index="4">
+                <button type="button" class="heart-button" aria-label="Send love to this memory">🤍</button>
+                <img src="images/gallery-4.png" alt="Memory 4 with Zahra" loading="lazy">
+                <figcaption>Memory 04</figcaption>
+            </figure>
+
+            <h2>One Day, These will be memories too.💖</h2>
+
+            <figure class="gallery-card reveal" data-index="5">
+                <button type="button" class="heart-button" aria-label="Send love to this memory">🤍</button>
+                <img src="images/gallery-5.png" alt="Memory 5 with Zahra" loading="lazy">
+                <figcaption>Memory 05</figcaption>
+            </figure>
+            <figure class="gallery-card reveal" data-index="6">
+                <button type="button" class="heart-button" aria-label="Send love to this memory">🤍</button>
+                <img src="images/gallery-6.png" alt="Memory 6 with Zahra" loading="lazy">
+                <figcaption>Memory 06</figcaption>
+            </figure>
+            <figure class="gallery-card reveal" data-index="7">
+                <button type="button" class="heart-button" aria-label="Send love to this memory">🤍</button>
+                <img src="images/gallery-7.png" alt="Memory 7 with Zahra" loading="lazy">
+                <figcaption>Memory 07</figcaption>
+            </figure>
+            <figure class="gallery-card reveal" data-index="8">
+                <button type="button" class="heart-button" aria-label="Send love to this memory">🤍</button>
+                <img src="images/gallery-8.png" alt="Memory 8 with Zahra" loading="lazy">
+                <figcaption>Memory 08</figcaption>
+            </figure>
+            <figure class="gallery-card reveal" data-index="9">
+                <button type="button" class="heart-button" aria-label="Send love to this memory">🤍</button>
+                <img src="images/gallery-9.png" alt="Memory 9 with Zahra" loading="lazy">
+                <figcaption>Memory 09</figcaption>
+            </figure>
+            <figure class="gallery-card reveal" data-index="10">
+                <button type="button" class="heart-button" aria-label="Send love to this memory">🤍</button>
+                <img src="images/gallery-10.png" alt="Memory 10 with Zahra" loading="lazy">
+                <figcaption>Memory 10</figcaption>
+            </figure>
+            <figure class="gallery-card reveal" data-index="11">
+                <button type="button" class="heart-button" aria-label="Send love to this memory">🤍</button>
+                <img src="images/gallery-11.png" alt="Memory 11 with Zahra" loading="lazy">
+                <figcaption>Memory 11</figcaption>
+            </figure>
+            <figure class="gallery-card reveal" data-index="12">
+                <button type="button" class="heart-button" aria-label="Send love to this memory">🤍</button>
+                <img src="images/gallery-12.png" alt="Memory 12 with Zahra" loading="lazy">
+                <figcaption>Memory 12 🤭</figcaption>
+            </figure>
+        </div>
+
+        <div class="div-section cta-section reveal">
+            <a href="index.html" class="cta-button cta-secondary">← Back to the Celebration</a>
+        </div>
+    </main>
+
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-hidden="true">
+        <button type="button" class="lightbox-close" id="lightboxClose" aria-label="Close">✕</button>
+        <button type="button" class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous photo">‹</button>
+        <div class="lightbox-stage">
+            <img id="lightboxImg" src="" alt="">
+            <p class="lightbox-caption" id="lightboxCaption"></p>
+        </div>
+        <button type="button" class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next photo">›</button>
+    </div>
+
+    <footer>
+        <p>Made with 💙 by your favorite people</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

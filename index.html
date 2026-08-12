@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1100">
+    <title>Happy Birthday, Dear Alizada!</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="balloon-field" id="balloonField" aria-hidden="true"></div>
+    <div class="confetti-field" id="confettiField" aria-hidden="true"></div>
+
+    <nav class="site-nav">
+        <a href="index.html" class="brand">🎈 Zahra's Day</a>
+        <div class="nav-links">
+            <a href="index.html" class="nav-link active">Home</a>
+            <a href="gallery.html" class="nav-link">Gallery</a>
+        </div>
+    </nav>
+
+    <header>
+        <div class="header">
+            <p class="eyebrow">A little something from your favorite people</p>
+            <h1>🎊 Today We're Celebrating Our Amazing Friend's Birthday! 🎊</h1>
+
+            <img src="images/zahra.png" alt="Zahra Alizada" id="bf-img">
+            <h2 id="age">19 Years of Being Absolutely Wonderful ✨</h2>
+            <h4 id="date">June 27, 2007 🎂</h4>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- Thank Allah and Pray to Him -->
+        <div class="div-section wish-section reveal">
+            <h2 class="heading2">Thank Allah for the year that has passed, and pray to Him for a new year filled with blessings, peace, and happiness. 🌟</h2>
+            <p class="wish-hint">🤲 Tap to raise your hands in dua</p>
+
+            <button type="button" class="pray-button" id="prayButton" aria-label="Raise hands in dua for Zahra">
+                <span class="pray-hands">🤲</span>
+            </button>
+
+            <div class="wish-wall" id="wishWall" hidden>
+                <p class="wish-intro">Ameen — now it's everyone's turn. Leave Zahra a dua below 👇</p>
+                <form class="wish-form" id="wishForm">
+                    <input type="text" id="wishName" placeholder="Your name" maxlength="40" required>
+                    <textarea id="wishText" placeholder="Write your dua for Zahra..." maxlength="200" required></textarea>
+                    <button type="submit" class="cta-button">Add My Dua 🤲</button>
+                </form>
+                <ul class="wish-list" id="wishList"></ul>
+            </div>
+        </div>
+
+        <div class="div-section reveal">
+            <h2 class="heading2">Here's How Happy We Are For You Today 🥳</h2>
+            <h3 class="heading3">(Hover or Tap the Gift 🎁)</h3>
+            <button type="button" class="gift-image" id="gift-happy" aria-label="Reveal: happy surprise">
+                <span class="gift-caption">You bring so much joy wherever you go! 🎉</span>
+            </button>
+        </div>
+
+        <div class="div-section reveal">
+            <h2 class="heading2">This Is What Happens When You Walk Into the Room 😎</h2>
+            <button type="button" class="gift-image" id="gift-react" aria-label="Reveal: reaction surprise">
+                <span class="gift-caption">The whole squad instantly lights up! 😍</span>
+            </button>
+        </div>
+
+        <div class="div-section reveal">
+            <h2 class="heading2">If We Had to Describe You in ONE Word 👇</h2>
+            <button type="button" class="gift-image" id="gift-word" aria-label="Reveal: one word surprise">
+                <span class="gift-caption">You are our amazing friend. 🔥</span>
+            </button>
+        </div>
+
+        <div class="div-section reveal">
+            <h2 class="heading2">A Little Birthday Surprise for Our Dear Friend 🥹</h2>
+            <button type="button" class="gift-image gift-friends-image" id="gift-friends" aria-label="Reveal: friends surprise">
+                <span class="gift-caption">We're so lucky to have a friend like you 💕</span>
+            </button>
+        </div>
+
+        <div class="div-section cta-section reveal">
+            <h2 class="heading2">There's More Waiting for You 📸</h2>
+            <p class="cta-copy">A whole gallery of memories, made just for today.</p>
+            <a href="gallery.html" class="cta-button">Open the Gallery →</a>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>Made with 💙 by your favorite people</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
